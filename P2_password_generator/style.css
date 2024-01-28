@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 7rem;
+    background-color: #8E3B46;
+}
+
+.card {
+    background-color: #E1DD8F;
+    padding: 2rem;
+    min-height: 60vh;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #E0777D;
+    font-size: 3rem;
+}
+
+h1 span {
+    color: #4C86A8;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.pass {
+    max-width: 25rem;
+    background-color: #fff;
+    margin: 1rem 0;
+    display: flex;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pass input {
+    flex: 1;
+    border: none;
+    padding: 1rem 0;
+    border-radius: 1rem;
+    outline: none;
+    text-indent: 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.pass img {
+    width: 2rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+button {
+    background-color: #4C86A8;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    color: #fff;
+    padding: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+button img {
+    width: 2rem;
+    padding: 0.5rem;
+}
