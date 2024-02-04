@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(75deg, #3015a7, #72148f);
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    padding: 12rem;
+
+}
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+h1 span {
+    color: cadetblue;
+    border-bottom: 0.5rem solid cadetblue;
+    padding-bottom: 0.5rem;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ddd;
+    max-width: 30vw;
+    max-height: 5vh;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    gap: 2rem;
+}
+
+.date input {
+    flex: 1;
+    padding: 0.5rem;
+    margin: 0.3 rem 0;
+    border-radius: 10px;
+    outline: 0;
+    border: 0;
+    font-size: 20px;
+    content: icon;
+    position: relative;
+}
+
+.date input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+
+.date button {
+    padding: 0.5rem;
+    outline: 0;
+    border: 0;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #72148f;
+    width: 10rem;
+    cursor: pointer;
+}
+
+.result {
+    margin: 2rem 1rem;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    user-select: none;
+}
