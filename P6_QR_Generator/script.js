@@ -16,6 +16,7 @@ const generateQR = () => {
         setTimeout(() => {
             qrText.classList.remove("error");
         }, 1000);
+        imgBox.classList.remove("show-img");
     }
 }
 
