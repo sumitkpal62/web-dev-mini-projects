@@ -90,7 +90,6 @@ button:hover {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: green;
     animation: anim 5s linear forwards;
 }
 
@@ -100,7 +99,31 @@ button:hover {
     }
 }
 
+.notification.success::after {
+    background-color: green;
+}
+
+.notification.error::after {
+    background-color: red;
+}
+
+.notification.invalid::after {
+    background-color: orange;
+}
+
 i {
     transform: scale(2);
     margin: 1rem;
+}
+
+i.success {
+    color: green;
+}
+
+i.error {
+    color: red;
+}
+
+i.invalid {
+    color: orange;
 }
