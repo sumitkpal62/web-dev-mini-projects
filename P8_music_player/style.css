@@ -11,7 +11,7 @@ body {
 .container {
     max-width: 500px;
     min-width: 100px;
-    max-height: 80vh;
+    height: 80vh;
     margin: 10vh auto;
     background-color: #87bbff;
     border-radius: 10px;
@@ -50,7 +50,7 @@ body {
 }
 
 .media p {
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
 }
 
 .controls {
@@ -70,6 +70,7 @@ body {
     text-align: center;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
     background-color: #fff;
+    color: rgb(60, 60, 255);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,6 +84,19 @@ body {
 }
 
 #progress {
-    -webkit-animation: none;
+    -webkit-appearance: none;
     width: 60%;
+    height: 5px;
+    background-color: rgb(217, 162, 60);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(60, 60, 255);
+    border: 5px solid #fff;
+    border-radius: 50%;
 }
