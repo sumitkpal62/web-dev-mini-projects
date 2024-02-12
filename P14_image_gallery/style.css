@@ -65,6 +65,13 @@ img:hover {
     display: flex;
     color: rgb(73, 36, 36);
     cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+}
+
+.button i:hover {
+    border: 1px solid rgb(36, 36, 36);
 }
 
 #left-button {
