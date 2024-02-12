@@ -2,6 +2,8 @@ const leftBtn = document.getElementById("left-button");
 const rightBtn = document.getElementById("right-button");
 const carousel = document.querySelector(".images");
 
+let page = 0
+
 carousel.addEventListener("wheel", (evt) => {
     evt.preventDefault();
     carousel.scrollLeft += evt.deltaY;
@@ -9,17 +11,16 @@ carousel.addEventListener("wheel", (evt) => {
 
 rightBtn.addEventListener("click", () => {
     carousel.scrollLeft += 1275;
-
+    page++;
 });
 
 leftBtn.addEventListener("click", () => {
     carousel.scrollLeft -= 1275;
+    page--;
 });
 
-let page = 0
-
 setInterval(() => {
-    if (page != 5) {
+    if (page < 6) {
         carousel.scrollLeft += 1275;
         page++;
     }
